@@ -1,0 +1,29 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d3d6da;
+  margin-bottom: 3vh;
+  padding: 2vh 1vw 2vh 1vw;
+}
+/*아이콘 크기 30px */
+.menu-icon,
+.faq-icon,
+.static-icon,
+.setting-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.title_wordle {
+  width: 50vw;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.right-side-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}

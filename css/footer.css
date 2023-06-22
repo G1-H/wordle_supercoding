@@ -1,0 +1,27 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3px;
+}
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+.keyboard-block {
+  width: 50px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: #d3d6da;
+  text-align: center;
+  line-height: 60px;
+  font-weight: bolder;
+}
+
+.block-enter,
+.block-back {
+  width: 75px;
+}
