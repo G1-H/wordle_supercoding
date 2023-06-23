@@ -1,6 +1,6 @@
 let attempts = 0;
 let index = 0;
-let correctWord = "APPLE";
+let correctWord = "JIWON";
 let howManyCorrect = 0;
 
 function appStart() {
@@ -87,6 +87,7 @@ function appStart() {
 }
 
 appStart();
+
 const startTimer = () => {
   let timer = document.querySelector("#timer");
   const start_time = new Date();
