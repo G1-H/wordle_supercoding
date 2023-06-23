@@ -8,9 +8,15 @@
     <title>Wordle</title>
   </head>
   <body>
+    <div class="invisible success">정답입니다.</div>
+    <div class="invisible fail">기회를 모두 소진하였습니다.</div>
     <header>
-      <div class="menu-icon">
-        <img src="asset/menu.svg" alt="" />
+      <div class="left-side-icons">
+        <div class="menu-icon">
+          <img src="asset/menu.svg" alt="" />
+        </div>
+        <div class="menu-icon"></div>
+        <div class="menu-icon"></div>
       </div>
       <div class="title_wordle">Wordle</div>
       <div class="right-side-icons">
@@ -26,12 +32,13 @@
       </div>
     </header>
     <main>
+      <div id="timer">00:00</div>
       <div class="board-row row-0">
         <div class="board-block" data-index="00"></div>
+        <div class="board-block" data-index="01"></div>
         <div class="board-block" data-index="02"></div>
         <div class="board-block" data-index="03"></div>
         <div class="board-block" data-index="04"></div>
-        <div class="board-block" data-index="05"></div>
       </div>
       <div class="board-row row-1">
         <div class="board-block" data-index="10"></div>
@@ -105,5 +112,6 @@
         <div class="keyboard-block block-back" data-key="BACK">BACK</div>
       </div>
     </footer>
+    <script src="js/index.js"></script>
   </body>
 </html>

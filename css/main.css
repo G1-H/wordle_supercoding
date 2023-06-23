@@ -19,4 +19,10 @@ main {
   border: 3px solid #d3d6da;
   width: 60px;
   height: 60px;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+#timer {
+  margin-bottom: 2vh;
+  font-size: 1.2rem;
 }
