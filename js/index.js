@@ -18,16 +18,22 @@ function appStart() {
       const comparedBlock = document.querySelector(
         `.board-block[data-index='${attempts}${i}']`
       );
+      const keyboardBlock = document.querySelector(
+        `.keyboard-block[data-key='${correctWord[i]}']`
+      );
       if (correctWord[i] === comparedBlock.innerText) {
         comparedBlock.style = "background-color:#F5793A; color : white;";
         comparedBlock.style.animation = "0.5s ease-in 0.1s action1";
+        keyboardBlock.style = "background-color:#F5793A; color : white;";
         howManyCorrect++;
       } else if (correctWord.includes(comparedBlock.innerText)) {
         comparedBlock.style = "background-color:#85BFF9; color : white;";
         comparedBlock.style.animation = "0.5s ease-in 0.1s action1";
+        keyboardBlock.style = "background-color:#85BFF9; color : white;";
       } else {
         comparedBlock.style = "background-color:#787C7E; color : white;";
         comparedBlock.style.animation = "0.5s ease-in 0.1s action1";
+        keyboardBlock.style = "background-color:#787C7E; color : white;";
       }
     }
     if (howManyCorrect === 5) {
