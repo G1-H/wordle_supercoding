@@ -19,7 +19,7 @@ function appStart() {
         `.board-block[data-index='${attempts}${i}']`
       );
       const keyboardBlock = document.querySelector(
-        `.keyboard-block[data-key='${correctWord[i]}']`
+        `.keyboard-block[data-key='${comparedBlock.innerText}']`
       );
       if (correctWord[i] === comparedBlock.innerText) {
         comparedBlock.style = "background-color:#F5793A; color : white;";
