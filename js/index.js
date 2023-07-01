@@ -89,7 +89,33 @@ function appStart() {
       }
     }
   };
+  const clickKeyboard = (ev) => {
+    console.log(ev.target.attributes["data-key"]);
+    const key = ev.target.attributes["data-key"].value;
+    if (index === 5) {
+      if (key === "ENTER") {
+        enterKeydown();
+      } else if (key === "BACK") {
+        backspaceKeydown();
+      } else {
+        return;
+      }
+    } else {
+      const thisBlock = document.querySelector(
+        `.board-block[data-index='${attempts}${index}']`
+      );
+      if (key != "BACK" && key != "ENTER") {
+        thisBlock.innerText = key;
+        index++;
+      } else if (key === "BACK") {
+        backspaceKeydown();
+      } else {
+        enterKeydown();
+      }
+    }
+  };
   window.addEventListener("keydown", handleKeydown);
+  window.addEventListener("click", clickKeyboard);
 }
 
 appStart();
