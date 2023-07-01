@@ -20,7 +20,9 @@ footer {
   line-height: 60px;
   font-weight: bolder;
 }
-
+.keyboard-block:hover {
+  cursor: pointer;
+}
 .block-enter,
 .block-back {
   width: 75px;
